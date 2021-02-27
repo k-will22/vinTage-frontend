@@ -17,6 +17,11 @@ img {
   height: 500px;
 }
 
+.img2 {
+  width:  1100px;
+  height: 550px;
+}
+
 .title {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 70px;

@@ -5,7 +5,7 @@ function Home() {
         <div>
             <br></br>
             <div>
-                <strong>One stop shop for all your vintage t-shirt needs!</strong>
+                <h2><strong>One stop shop for all your vintage t-shirt needs!</strong></h2>
             </div>
             <br></br>
             <img className="img2"

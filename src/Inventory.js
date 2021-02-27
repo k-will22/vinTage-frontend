@@ -4,6 +4,8 @@ function Inventory() {
     return (
         <div>
             <div>
+            <br></br>
+            <br></br>
             <img 
             src="https://process.fs.grailed.com/AJdAgnqCST4iPtnUxiGtTz/auto_image/cache=expiry:max/rotate=deg:exif/resize=height:1400/output=quality:70/compress/https://cdn.fs.grailed.com/api/file/AKXqF3qXSX2Fa1ih5O7X" 
             alt="Green Day tour shirt"></img>
@@ -28,7 +30,7 @@ function Inventory() {
             src="https://img.secure.cdn2.wmgecom.com/media/catalog/product/cache/1835/image/800x/9df78eab33525d08d6e5fb8d27136e95/t/s/tsp-infititesadnesstour.jpg" 
             alt="Smashing Pumpkins tour shirt"></img>
             <p>Smashing Pumpkins Infinate Sadness Tour Shirt</p>
-            <p>$30</p>
+            <p>$450</p>
             <button>Purchase</button>
             </div>
             <br></br>

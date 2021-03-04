@@ -5,11 +5,11 @@ function Home() {
         <div>
             <br></br>
             <div>
-                <h2><strong>One stop shop for all your vintage t-shirt needs!</strong></h2>
+                <h2>One stop shop for all your vintage t-shirt needs!</h2>
             </div>
             <br></br>
             <img className="img2"
-            src="https://lh3.googleusercontent.com/proxy/2fksarXrTs_F3FOHCk4RGDXHy6cdPRxbZ71AQ5hWFZ0EFteYtqmsZTGzFPsEdM-NbWzfvqZhhbsxdl9hPjOIt1ZFvs1-tsu2C52nPp6a14v2wSSC0_X-LSxyZ-L90WweaJaSt-Y" 
+            src="https://lh3.googleusercontent.com/proxy/cw5SNicbqOxe8xSU9r9ig8rq_akwcWd9h0EiVhNdU7ROEJJTpQN2AIUA9dKMiZ5nMJP2K5P-tbgLrH-qBEC5jiTQFDZs7GpHjPxo5pZou4k-FIEpmQjMVgHVZ8CLEWvlYk82qds" 
             alt="wall of shirts"></img>
         </div>
     )

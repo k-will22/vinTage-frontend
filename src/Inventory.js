@@ -1,8 +1,13 @@
 import React from 'react';
 
-function Inventory({items}) {
+function Inventory({items, setPurchased}) {
 
     const itemObj = items.map(item => {
+        
+        function addCart() {
+            setPurchased(item)
+        }
+
         return (
             <div key={item.id}>
             <br></br>
@@ -16,7 +21,7 @@ function Inventory({items}) {
             <p>{item.description}</p>
             <p>${parseInt(item.price).toFixed(2)}</p>
             <p>Size: {item.size}</p>
-            <button>Purchase</button>
+            <button onClick={addCart}>Add To Cart</button>
             </div>
         )
     })

@@ -9,6 +9,9 @@ import Home from './Home';
 
 function App() {
   const [items, setItems] = useState([])
+  const [purchased, setPurchased] = useState([])
+
+  console.log(purchased)
 
   useEffect(() => {
     fetch("http://localhost:3000/items")
@@ -28,10 +31,10 @@ function App() {
         <Home />
       </Route>
       <Route path="/inventory">
-        <Inventory items={items} />
+        <Inventory items={items} purchased={purchased} setPurchased={setPurchased} />
       </Route>
       <Route path="/checkout">
-        <Checkout />
+        <Checkout purchased={purchased} />
       </Route>
       </Switch>
     </div>

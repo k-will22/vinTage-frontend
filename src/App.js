@@ -9,15 +9,23 @@ import Home from './Home';
 
 function App() {
   const [items, setItems] = useState([])
-  const [purchased, setPurchased] = useState([])
+  const [cartItems, setCartItems] = useState([])
 
-  console.log(purchased)
+  console.log(cartItems)
+
+  const user = 1
 
   useEffect(() => {
     fetch("http://localhost:3000/items")
     .then(response => response.json())
     .then(setItems)
     }, [])
+
+  useEffect(() => {
+    fetch("http://localhost:3000/carts")
+    .then(response => response.json())
+    .then(setCartItems)
+  }, [])
 
   return (
     <div className="App">
@@ -31,10 +39,14 @@ function App() {
         <Home />
       </Route>
       <Route path="/inventory">
-        <Inventory items={items} purchased={purchased} setPurchased={setPurchased} />
+        <Inventory 
+          items={items} 
+          user={user} 
+          cartItems={cartItems}
+          setCartItems={setCartItems} />
       </Route>
       <Route path="/checkout">
-        <Checkout purchased={purchased} />
+        <Checkout cartItems={cartItems} />
       </Route>
       </Switch>
     </div>

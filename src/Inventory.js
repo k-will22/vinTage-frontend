@@ -1,12 +1,28 @@
 import React from 'react';
 
-function Inventory({items, setPurchased}) {
+function Inventory({items, user, cartItems, setCartItems}) {
 
     const itemObj = items.map(item => {
         
         function addCart() {
-            setPurchased(item)
-        }
+
+            const itemInCart = {
+                user_id: user,
+                item_id: item.id
+            }   
+
+            fetch("http://localhost:3000/carts", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify(itemInCart),
+              })
+                .then((r) => r.json())
+                .then(data => {
+                    setCartItems([...cartItems, data])
+                })
+            }
 
         return (
             <div key={item.id}>
